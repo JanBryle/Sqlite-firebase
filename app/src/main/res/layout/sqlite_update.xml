@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/sqlite_update_title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="10dp"
+        android:maxLength="20" />
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/sqlite_update_note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:padding="10dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Layout for displaying selected date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="end">
+
+        <!-- TextView to display selected date -->
+        <TextView
+            android:id="@+id/sqlite_update_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Date"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

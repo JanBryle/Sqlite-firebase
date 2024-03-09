@@ -1,0 +1,97 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Within the card, there's a LinearLayout that vertically arranges its child views. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ImageView for displaying media (e.g., an image). -->
+        <ImageView
+            android:id="@+id/firebase_Temp_Image_View"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo" />
+
+        <!-- Nested LinearLayout for arranging text content vertically with padding. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView for displaying a title with medium text appearance. -->
+            <TextView
+                android:id="@+id/firebase_Temp_Title_Text_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <!-- TextView for displaying a description with medium body text appearance and secondary text color. -->
+            <TextView
+                android:id="@+id/firebase_Temp_Note_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Description"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?android:attr/textColorSecondary" />
+
+        </LinearLayout>
+
+        <!-- LinearLayout for placing buttons horizontally. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <!-- MaterialButton for sending a message. -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/firebase_Temp_Edit_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Edit"
+                style="?attr/borderlessButtonStyle" />
+
+            <!-- MaterialButton for adding to a wish list. -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/firebase_Temp_Delete_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                style="?attr/borderlessButtonStyle" />
+
+            <!-- LinearLayout for placing date TextView to the right. -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <!-- TextView for displaying the selected date. -->
+                <TextView
+                    android:id="@+id/firebase_Temp_Date_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:text="Selected Date"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    style="?attr/borderlessButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

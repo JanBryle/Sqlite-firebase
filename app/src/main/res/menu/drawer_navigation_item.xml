@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root menu resource file -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Main Item Menu for Premium -->
+    <item android:title="@string/app_name">
+        <menu>
+
+            <!-- Firebase Item -->
+            <item
+                android:id="@+id/firebase"
+                android:icon="@drawable/logo"
+                android:title="Firebase"
+                app:showAsAction="ifRoom"/>
+
+            <!-- Sqlite Item -->
+            <item
+                android:id="@+id/sqlite"
+                android:icon="@drawable/sqlite"
+                android:title="Sqlite"
+                app:showAsAction="ifRoom"/>
+
+            <!-- Logout Item -->
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root CoordinatorLayout: The main layout container -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    tools:context=".core.auth.AuthenticationActivity">
+
+    <!-- Relative Layout for content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <!-- Logo ImageView: Displays the app logo below the title -->
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Title TextView: Displays the welcome message -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creative Note"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:textStyle="bold"
+            android:layout_below="@id/logo_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/google_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with Google"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
